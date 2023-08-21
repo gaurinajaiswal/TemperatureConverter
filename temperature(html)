@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Borel&family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Montserrat:wght@200;300;400&family=Poppins&family=Roboto+Slab&family=Roboto:wght@400;500&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="title"><h1>TEMPERATURE CONVERTER</h1></div>
+        <div class="box">
+            <div class="r1">
+                <div class="txt">
+                    <b>From :</b>
+                </div>
+                <div class="temp">
+                    <select id="opt1">
+                        <option>Celsius</option>
+                        <option>Fahrenheit</option>
+                        <option>Kelvin</option>
+                    </select>
+                </div>
+                <div class="num">
+                    <input type="number" placeholder="Input" id="input" name="input" step="any" required>
+                </div>
+            </div>
+            <div class="r1">
+                <div class="txt">
+                    <b>To :</b>
+                </div>
+                <div class="temp">
+                    <select id="opt2">
+                        <option>Celsius</option>
+                        <option>Fahrenheit</option>
+                        <option>Kelvin</option>
+                    </select>
+                </div>
+                <div class="num">
+                    <input type="number" placeholder="Output" id="output" name="output" step="any" required>
+                </div>
+            </div>
+            <div class="r1">
+                <div class="send">
+                    <button onclick="reset()" class="set">Reset</button>
+                </div>
+                <div class="send">
+                    <button onclick="cal()" class="set">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>
