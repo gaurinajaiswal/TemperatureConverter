@@ -1,0 +1,43 @@
+function cal(){
+    const input= document.getElementById('input').value;
+    const temp1= document.getElementById('opt1').value;
+    const temp2= document.getElementById('opt2').value;
+    if(temp1 == "Celsius"){
+        if(temp2 == "Fahrenheit"){
+            output= (input * (9 / 5) + 32);
+        }
+        else if(temp2 == "Kelvin"){
+            output= (input + 273.15);
+        }
+        else{
+            output = input;
+        }
+    }
+    else if(temp1 == "Fahrenheit"){
+        if(temp2 == "Celsius"){
+            output= (input - 32) * 5/9;
+        }
+        else if(temp2 == "Kelvin"){
+            output= (input + 459.67) * 5/9;
+        }
+        else{
+            output = input;
+        }
+    }
+    else{
+        if(temp2 == "Celsius"){
+            output= (input - 273.15);
+        }
+        else if(temp2 == "Fahrenheit"){
+            output= (input - 273.15) * 9/5 + 32;
+        }
+        else{
+            output = input;
+        }
+    }
+    document.getElementById('output').value= output;
+}
+function reset(){
+    document.getElementById('input').value="";
+    document.getElementById('output').value="";
+}
