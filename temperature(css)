@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    width: 100%;
+    height: 690px;
+    border: 1px solid black;
+    background-image: url('https://media.istockphoto.com/id/1367756031/vector/light-blue-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=qiJl7j-2terwHd-1YJxiFIo1VJx6l6IsmoqlgeypQ7c=');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.title{
+    width: 100%;
+    height: 70px;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+h1{
+    text-shadow: 4px 4px 3px gray;
+}
+.box{
+    width: 800px;
+    height: 365px;
+    margin: auto;
+    background: linear-gradient(135deg, #84bbee, #e6c5e1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.r1{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.txt{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+.temp{
+    width: 170px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.num{
+    width: 240px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+#opt1,
+#opt2{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:azure;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: 1s;
+    font-size: 17px;
+}
+#opt1:hover{
+    border-color:blueviolet;
+}
+#opt2:hover{
+    border-color:blueviolet;
+}
+#input,
+#output{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:azure;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: 1s;
+    font-size: 17px;
+}
+#input:hover{
+    border-color:blueviolet;
+}
+#output:hover{
+    border-color:blueviolet;
+}
+.send{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.set{
+    height: 45px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color:rgba(127, 223, 223,1);
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: 1s;
+    font-size: 20px;
+}
+.set:hover{
+    background-color:rgba(127, 223, 223,0.4);
+}
